@@ -1,6 +1,7 @@
 import './app.scss';
 import React, { useState } from "react";
 import Modal from "./modal";
+import AccountModal from "./accountModal";
 import img1 from "./img/img1.jpg";
 import img2 from "./img/img2.jpg";
 import img3 from "./img/img3.jpg";
@@ -16,8 +17,12 @@ import img12 from "./img/img12.jpg";
 
 function App() {
   const [visible, setVisible] = useState(false);
+  const [accountIndex, setAccountIndex] = useState(undefined);
   const closeModal = () => {
     setVisible(false);
+  };
+  const closeAccountModal = () => {
+    setAccountIndex(undefined);
   };
   const [index, setIndex] = useState(0);
   const data = [
@@ -96,7 +101,28 @@ function App() {
           />
         </div>
         <div className="location-page"></div>
-        <div className="account-page"></div>
+        <div className="account-page">
+          <div className="account-page-title">신랑&신부에게 마음 전하실 곳</div>
+          <div className="account-page-box">
+            <div
+              className="account-page-box-one"
+              onClick={() => setAccountIndex(0)}
+            >
+              신랑측 계좌번호
+            </div>
+            <div
+              className="account-page-box-one"
+              onClick={() => setAccountIndex(1)}
+            >
+              신부측 계좌번호
+            </div>
+          </div>
+          <AccountModal
+            visible={accountIndex !== undefined && true}
+            closeAccountModal={closeAccountModal}
+            index={accountIndex}
+          />
+        </div>
         <div className="footer"></div>
       </div>
     </div>
