@@ -63,18 +63,18 @@ function App() {
         </div>
         <div className="photo-page">
           <div className="photo-page-grid" onClick={() => setVisible(true)}>
-            <img src={img1} />
-            <img src={img2} />
-            <img src={img3} />
-            <img src={img4} />
-            <img src={img5} />
-            <img src={img6} />
-            <img src={img7} />
-            <img src={img8} />
-            <img src={img9} />
-            <img src={img10} />
-            <img src={img11} />
-            <img src={img12} />
+            <img src={img1} className="photo-page-img" />
+            <img src={img2} className="photo-page-img" />
+            <img src={img3} className="photo-page-img" />
+            <img src={img4} className="photo-page-img" />
+            <img src={img5} className="photo-page-img" />
+            <img src={img6} className="photo-page-img" />
+            <img src={img7} className="photo-page-img" />
+            <img src={img8} className="photo-page-img" />
+            <img src={img9} className="photo-page-img" />
+            <img src={img10} className="photo-page-img" />
+            <img src={img11} className="photo-page-img" />
+            <img src={img12} className="photo-page-img" />
           </div>
           <Modal visible={visible} closeModal={closeModal} />
         </div>
