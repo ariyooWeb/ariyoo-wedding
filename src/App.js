@@ -1,8 +1,24 @@
 import './app.scss';
 import React, { useState } from "react";
+import Modal from "./modal";
+import img1 from "./img/img1.jpg";
+import img2 from "./img/img2.jpg";
+import img3 from "./img/img3.jpg";
+import img4 from "./img/img4.jpg";
+import img5 from "./img/img5.jpg";
+import img6 from "./img/img6.jpg";
+import img7 from "./img/img7.jpg";
+import img8 from "./img/img8.jpg";
+import img9 from "./img/img9.jpg";
+import img10 from "./img/img10.jpg";
+import img11 from "./img/img11.jpg";
+import img12 from "./img/img12.jpg";
 
 function App() {
   const [visible, setVisible] = useState(false);
+  const closeModal = () => {
+    setVisible(false);
+  };
   return (
     <div className="App">
       <div className="inner">
@@ -47,9 +63,20 @@ function App() {
         </div>
         <div className="photo-page">
           <div className="photo-page-grid" onClick={() => setVisible(true)}>
-            사진들
+            <img src={img1} />
+            <img src={img2} />
+            <img src={img3} />
+            <img src={img4} />
+            <img src={img5} />
+            <img src={img6} />
+            <img src={img7} />
+            <img src={img8} />
+            <img src={img9} />
+            <img src={img10} />
+            <img src={img11} />
+            <img src={img12} />
           </div>
-          <Modal visible={visible} />
+          <Modal visible={visible} closeModal={closeModal} />
         </div>
         <div className="location-page"></div>
         <div className="account-page"></div>
