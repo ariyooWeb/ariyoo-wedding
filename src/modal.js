@@ -1,5 +1,5 @@
 // react
-import React from "react";
+import React, { useState } from "react";
 import "./modal.scss";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -21,11 +21,13 @@ const Modal = (props) => {
   const closeModal = () => {
     if (props.closeModal) props.closeModal();
   };
+
   const settings = {
     dots: false,
     infinit: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+    initialSlide: props.initialSlide,
   };
   return (
     props.visible && (

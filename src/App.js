@@ -19,6 +19,24 @@ function App() {
   const closeModal = () => {
     setVisible(false);
   };
+  const [index, setIndex] = useState(0);
+  const data = [
+    img1,
+    img2,
+    img3,
+    img4,
+    img5,
+    img6,
+    img7,
+    img8,
+    img9,
+    img10,
+    img11,
+    img12,
+  ];
+  const photoClick = (index) => {
+    setIndex(index);
+  };
   return (
     <div className="App">
       <div className="inner">
@@ -63,20 +81,19 @@ function App() {
         </div>
         <div className="photo-page">
           <div className="photo-page-grid" onClick={() => setVisible(true)}>
-            <img src={img1} className="photo-page-img" />
-            <img src={img2} className="photo-page-img" />
-            <img src={img3} className="photo-page-img" />
-            <img src={img4} className="photo-page-img" />
-            <img src={img5} className="photo-page-img" />
-            <img src={img6} className="photo-page-img" />
-            <img src={img7} className="photo-page-img" />
-            <img src={img8} className="photo-page-img" />
-            <img src={img9} className="photo-page-img" />
-            <img src={img10} className="photo-page-img" />
-            <img src={img11} className="photo-page-img" />
-            <img src={img12} className="photo-page-img" />
+            {data.map((item, index) => (
+              <img
+                src={item}
+                className="photo-page-img"
+                onClick={() => photoClick(index)}
+              />
+            ))}
           </div>
-          <Modal visible={visible} closeModal={closeModal} />
+          <Modal
+            visible={visible}
+            closeModal={closeModal}
+            initialSlide={index}
+          />
         </div>
         <div className="location-page"></div>
         <div className="account-page"></div>
