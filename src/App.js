@@ -1,4 +1,5 @@
 import './app.scss';
+import './reset.css';
 import React, { useState } from "react";
 import Modal from "./modal";
 import AccountModal from "./accountModal";
@@ -14,6 +15,7 @@ import img9 from "./img/img9.jpg";
 import img10 from "./img/img10.jpg";
 import img11 from "./img/img11.jpg";
 import img12 from "./img/img12.jpg";
+import map from "./img/map.jpg";
 
 function App() {
   const [visible, setVisible] = useState(false);
@@ -51,6 +53,7 @@ function App() {
             <div className="main-page-invite-text">
               효철&아름의 결혼식에 초대합니다
             </div>
+            <div>&hearts;</div>
           </div>
           <div className="main-page-divider"></div>
           <div className="main-page-names">
@@ -112,57 +115,55 @@ function App() {
         </div>
         <div className="location-page">
           <div className="location-page-main">
-            <div className="location-page-main-bold">라비돌웨딩강남 <span>TEL 02-538-3300</span></div>
-            <div className="location-page-main-light">서울시 강남구 논현로79길 72 (서울 강남구 역삼동 828-10)</div>
+            <div className="location-page-main-bold">라비돌웨딩강남</div>
+            <div className="location-page-main-bold">서울시 강남구 논현로79길 72 (서울 강남구 역삼동 828-10)</div>
           </div>
-          <div className="loaction-page-way">
-            <div>
-              <div className="loaction-page-way-type">
-                <div className="loaction-page-way-type-title">버스</div>
-                <div className="loaction-page-way-type-box">
-                  <div className="loaction-page-way-type-box-number">
-                    <div className="loaction-page-way-type-box-number-type">간선(파랑)</div>
-                    <div className="loaction-page-way-type-box-number-bus">140, 146, 341, 360, 400, 402, 420, 440, 441, 452, 470, 541, 542, 740, 741</div>
-                  </div>
+          <div className="location-page-way">
+            <div className="location-page-way-type">
+              <div className="location-page-way-type-title">버스 이용시</div>
+              <div className="location-page-way-type-box">
+                <div className="location-page-way-type-box-number">
+                  <div className="location-page-way-type-box-number-type">&#8226;간선(파랑)</div>
+                  <div className="location-page-way-type-box-number-bus">140, 146, 341, 360, 400, 402, 420, 440, 441, 452, 470, 541, 542, 740, 741</div>
                 </div>
               </div>
-              <div className="loaction-page-way-type">
-                <div className="loaction-page-way-type-title">버스</div>
-                <div className="loaction-page-way-type-box">
-                  <div className="loaction-page-way-type-box-number">
-                    <div className="loaction-page-way-type-box-number-type">광역(빨강)</div>
-                    <div className="loaction-page-way-type-box-number-bus">140, 9404, 9408, M4403, M4434, M5438, M6427, M6439, M7412</div>
-                  </div>
+              <div className="location-page-way-type-box">
+                <div className="location-page-way-type-box-number">
+                  <div className="location-page-way-type-box-number-type">&#8226;광역(빨강)</div>
+                  <div className="location-page-way-type-box-number-bus">140, 9404, 9408, M4403, M4434, M5438, M6427, M6439, M7412</div>
                 </div>
               </div>
             </div>
-            <div className="loaction-page-way-title-type">
-              <div className="loaction-page-way-title-type-title">지하철</div>
-              <div className="loaction-page-way-title-type-explain">2호선 강남역 하차 1번출구 역삼역방면으로 오다가 우리은행에서 우회전 200M 정도 가면 도착</div>
+            <div className="location-page-way-type">
+              <div className="location-page-way-type-title">지하철 이용시</div>
+              <div className="location-page-way-title-type-explain">2호선 강남역 하차 1번출구 역삼역방면으로 오다가 우리은행에서 우회전 200M 정도 가면 도착</div>
             </div>
           </div>
-          <div className="loaction-page-way">
-            <div className="loaction-page-way-title">
-              자가용
+          <div className="location-page-way-type">
+            <div className="location-page-way-type-title">
+              자가용 이용시
             </div>
-            <div className="loaction-page-way-type">
-              <div className="loaction-page-way-type">
-                <span className="loaction-page-way-type-bold">한남대교 방면에서 올경우: </span><span className="loaction-page-way-type-light">강남역사거리에서 좌회전 - 우리은행에서 우회전 200M</span>
+            <div className="location-page-way-type">
+              <div className="location-page-way-type">
+                <span className="location-page-way-type-bold">&#8226;한남대교 방면에서 올경우: </span><span className="location-page-way-type-light">강남역사거리에서 좌회전 - 우리은행에서 우회전 200M</span>
               </div>
-              <div className="loaction-page-way-type">
-                <span className="loaction-page-way-type-bold">코엑스 방면에서 올경우: </span><span className="loaction-page-way-type-light">강남역사거리에서 U턴 - 우리은행에서 우회전 200M</span>
+              <div className="location-page-way-type">
+                <span className="location-page-way-type-bold">&#8226;코엑스 방면에서 올경우: </span><span className="location-page-way-type-light">강남역사거리에서 U턴 &#8594;	 우리은행에서 우회전 200M</span>
               </div>
             </div>
           </div>
-          <div className="loaction-page-way">
-            <div className="loaction-page-way-type-title">셔틀버스 운행</div>
-            <div className="loaction-page-way-type-explain">
-              2호선 강남역 1번출구 - 라비돌웨딩강남
+          <div className="location-page-way">
+            <div className="location-page-way-type-title">셔틀버스 운행</div>
+            <div className="location-page-way-type-explain">
+              2호선 강남역 1번출구 &#8594; 라비돌웨딩강남
             </div>
           </div>
         </div>
+        <div className="map-page">
+            <img src={map} />
+          </div>
         <div className="account-page">
-          <div className="account-page-title">신랑&신부에게 마음 전하실 곳</div>
+          <div className="account-page-title">신랑 & 신부에게 마음 전하실 곳</div>
           <div className="account-page-box">
             <div
               className="account-page-box-one"
@@ -183,7 +184,10 @@ function App() {
             index={accountIndex}
           />
         </div>
-        <div className="footer"></div>
+        <div className="footer">
+          made by ahreum<br/>
+          저희의 결혼을 축복해주세요.<br/>감사합니다
+        </div>
       </div>
     </div>
   );
