@@ -69,19 +69,29 @@ function App() {
           </div>
         </div>
         <div className="text-page">
-          같은 생각, 같은 마음으로 지혜롭게 살겠습니다. 저희 두 사람이 소중한
+          같은 생각, 같은 마음으로 지혜롭게 살겠습니다.<br/> 저희 두 사람이 소중한
           분들을 모시고 사랑의 결실을 이루려 합니다. 오로지 믿음과 사랑만을
           약속하는 귀한 날에 축복의 걸음을 하시어 저희의 하나됨을 지켜보아
           주시고 격려해 주시면 더없는 기쁨으로 간직하겠습니다.
         </div>
-        <div className="parents-box">
-          <div className="parents-box-parents">
-            <div className="parents-box-parents-parent">아버지 최연수</div>
-            <div className="parents-box-parents-parent">어머니 문순남</div>
+        <div className="parents-page">
+          <div className="parents-page-box">
+            <div className="parents-page-box-side">
+              신랑측 혼주
+            </div>
+            <div className="parents-page-box-names">
+              <div className="parents-page-box-names-name">아버지 최연수</div>
+              <div className="parents-page-box-names-name">어머니 문순남</div>
+            </div>
           </div>
-          <div className="parents-box-parents">
-            <div className="parents-box-parents-parent">아버지 최연수</div>
-            <div className="parents-box-parents-parent">어머니 문순남</div>
+          <div className="parents-page-box">
+            <div className="parents-page-box-side">
+              신부측 혼주
+            </div>
+            <div className="parents-page-box-names">
+              <div className="parents-page-box-names-name">아버지 유봉인</div>
+              <div className="parents-page-box-names-name">어머니 정규옥</div>
+            </div>
           </div>
         </div>
         <div className="photo-page">
@@ -100,7 +110,57 @@ function App() {
             initialSlide={index}
           />
         </div>
-        <div className="location-page"></div>
+        <div className="location-page">
+          <div className="location-page-main">
+            <div className="location-page-main-bold">라비돌웨딩강남 <span>TEL 02-538-3300</span></div>
+            <div className="location-page-main-light">서울시 강남구 논현로79길 72 (서울 강남구 역삼동 828-10)</div>
+          </div>
+          <div className="loaction-page-way">
+            <div>
+              <div className="loaction-page-way-type">
+                <div className="loaction-page-way-type-title">버스</div>
+                <div className="loaction-page-way-type-box">
+                  <div className="loaction-page-way-type-box-number">
+                    <div className="loaction-page-way-type-box-number-type">간선(파랑)</div>
+                    <div className="loaction-page-way-type-box-number-bus">140, 146, 341, 360, 400, 402, 420, 440, 441, 452, 470, 541, 542, 740, 741</div>
+                  </div>
+                </div>
+              </div>
+              <div className="loaction-page-way-type">
+                <div className="loaction-page-way-type-title">버스</div>
+                <div className="loaction-page-way-type-box">
+                  <div className="loaction-page-way-type-box-number">
+                    <div className="loaction-page-way-type-box-number-type">광역(빨강)</div>
+                    <div className="loaction-page-way-type-box-number-bus">140, 9404, 9408, M4403, M4434, M5438, M6427, M6439, M7412</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="loaction-page-way-title-type">
+              <div className="loaction-page-way-title-type-title">지하철</div>
+              <div className="loaction-page-way-title-type-explain">2호선 강남역 하차 1번출구 역삼역방면으로 오다가 우리은행에서 우회전 200M 정도 가면 도착</div>
+            </div>
+          </div>
+          <div className="loaction-page-way">
+            <div className="loaction-page-way-title">
+              자가용
+            </div>
+            <div className="loaction-page-way-type">
+              <div className="loaction-page-way-type">
+                <span className="loaction-page-way-type-bold">한남대교 방면에서 올경우: </span><span className="loaction-page-way-type-light">강남역사거리에서 좌회전 - 우리은행에서 우회전 200M</span>
+              </div>
+              <div className="loaction-page-way-type">
+                <span className="loaction-page-way-type-bold">코엑스 방면에서 올경우: </span><span className="loaction-page-way-type-light">강남역사거리에서 U턴 - 우리은행에서 우회전 200M</span>
+              </div>
+            </div>
+          </div>
+          <div className="loaction-page-way">
+            <div className="loaction-page-way-type-title">셔틀버스 운행</div>
+            <div className="loaction-page-way-type-explain">
+              2호선 강남역 1번출구 - 라비돌웨딩강남
+            </div>
+          </div>
+        </div>
         <div className="account-page">
           <div className="account-page-title">신랑&신부에게 마음 전하실 곳</div>
           <div className="account-page-box">
