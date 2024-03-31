@@ -124,7 +124,7 @@ function App() {
           <div className="location-page-divider"></div>
           <div className="location-page-way">
             <div className="location-page-way-type-title">셔틀버스 운행</div>
-            <div className="location-page-way-type-explain">
+            <div className="location-page-way-type-box">
               2호선 강남역 1번출구 &#8594; 라비돌웨딩강남
             </div>
           </div>
@@ -135,13 +135,13 @@ function App() {
               <div className="location-page-way-type-flex">
                 <div className="location-page-way-type-box">
                   <div className="location-page-way-type-box-number">
-                    <div className="location-page-way-type-box-number-type">&#9724; 간선(파랑)</div>
+                    <div className="location-page-way-type-box-number-type"><div className="location-page-way-type-box-number-type-text">&#9724;</div> 간선(파랑)</div>
                     <div className="location-page-way-type-box-number-bus">140, 146, 341, 360, 400, 402, 420, 440, 441, 452, 470, 541, 542, 740, 741</div>
                   </div>
                 </div>
                 <div className="location-page-way-type-box">
                   <div className="location-page-way-type-box-number">
-                    <div className="location-page-way-type-box-number-type">&#9724; 광역(빨강)</div>
+                    <div className="location-page-way-type-box-number-type"><div className="location-page-way-type-box-number-type-text">&#9724;</div> 광역(빨강)</div>
                     <div className="location-page-way-type-box-number-bus">9404, 9408, M4403, M4434, M5438, M6427, M6439, M7412</div>
                   </div>
                 </div>
@@ -150,7 +150,7 @@ function App() {
             <div className="location-page-divider"></div>
             <div className="location-page-way-type">
               <div className="location-page-way-type-title">지하철 이용시</div>
-              <div className="location-page-way-title-type-explain">2호선 강남역 하차 &#8594; 1번출구 역삼역방면으로 오다가 우리은행에서 우회전 200M 정도 가면 도착</div>
+              <div className="location-page-way-type-box">2호선 강남역 하차 &#8594; 1번출구 역삼역방면으로 오다가 우리은행에서 우회전 200M 정도 가면 도착</div>
             </div>
           </div>
           <div className="location-page-divider"></div>
@@ -159,11 +159,11 @@ function App() {
               자가용 이용시
             </div>
             <div className="location-page-way-type">
-              <div className="location-page-way-type">
-                <span className="location-page-way-type-bold">&#9724; 한남대교 방면에서 오실경우: </span><span className="location-page-way-type-light">강남역사거리에서 좌회전 &#8594; 우리은행에서 우회전 200M</span>
+              <div className="location-page-way-type-box">
+                <span className="location-page-way-type-box-text"><div className="location-page-way-type-box-text-dot">&#9724;</div> 한남대교 방면에서 오실경우: </span><span className="location-page-way-type-light">강남역사거리에서 좌회전 &#8594; 우리은행에서 우회전 200M</span>
               </div>
-              <div className="location-page-way-type">
-                <span className="location-page-way-type-bold">&#9724; 코엑스 방면에서 오실경우: </span><span className="location-page-way-type-light">강남역사거리에서 U턴 &#8594;	 우리은행에서 우회전 200M</span>
+              <div className="location-page-way-type-box">
+                <span className="location-page-way-type-box-text"><div className="location-page-way-type-box-text-dot">&#9724;</div> 코엑스 방면에서 오실경우: </span><span className="location-page-way-type-box-text">강남역사거리에서 U턴 &#8594;	 우리은행에서 우회전 200M</span>
               </div>
             </div>
           </div>

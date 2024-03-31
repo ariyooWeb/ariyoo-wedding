@@ -2,37 +2,38 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'NanumSquare', sans-serif;
+    font-family: "GangwonEdu_OTFBoldA";
 }
 .inner {
     width: 100%;
     max-width: 720px;
 }
 .main-page {
-    padding: 80px 0;
+    padding: 60px 0;
     background: rgb(223,204,223,0.5);
     text-align: center;
-    color: rgb(109, 67, 129);;
+    color: rgb(142, 115, 185);
 
     &-invite {
         letter-spacing: +1.5px;
         &-weddingDay {
-            font-size: 32px;
-            padding-bottom: 10px;
-            font-weight: bold;
+            font-size: 40px;
+            font-weight:800;
+            font-family: 'DesignHouse';
         }
         &-text {
             font-size: 16px;
+            font-family: "GangwonEdu_OTFBoldA";
         }
         
     }
     &-divider {
         width: 80%;
-        height:1px;
-        background: #a9a8a3;
+        height:2px;
+        background: rgb(142, 115, 185,0.3);
         margin: 0 auto;
         margin-top: 50px;
-        opacity:0.7;
+        border-radius: 10px;
     }
     &-names {
         padding: 50px 0 0 0;
@@ -40,12 +41,14 @@
         display: flex;
         flex-direction: column;
         gap: 10px;
+        font-family: "GangwonEdu_OTFBoldA";
     }
     &-information {
         padding: 30px 0;
         font-size: 18px;
         font-weight: bold;
         color: #565656;
+        font-family: "GangwonEdu_OTFBoldA";
         &-date {
             margin-bottom: 20px;
             &-item {
@@ -83,7 +86,7 @@
         align-items: center;
         width: 100%;
         &-side {
-            font-size: 18px;
+            font-size: 16px;
             font-weight: bold;
             margin-bottom: 15px;
         }
@@ -92,20 +95,19 @@
             flex-direction: column;
             align-items: center;
             &-name {
-                font-size: 16px;
+                font-size: 14px;
                 line-height: 1.4;
             }
         }
         &-divider {
-            width: 1px;
+            width: 0.5px;
             height: 60px;
-            background: #a9a8a3;
+            background: rgb(109, 67, 129);
         }
     }
 }
 .photo-page {
     padding: 10px;
-    background: #fff;
     &-grid {
         display: grid;
         gap: 8px 8px;
@@ -135,20 +137,20 @@
         margin-bottom: 15px;
         color: #373737;
         &-bold {
-            font-weight: bold;
-            font-size: 18px;
+            font-weight: 700;
+            font-size: 16px;
         }
     }
     &-way {
         word-break: keep-all;
-        font-size: 18px;
+        font-size: 16px;
         margin-bottom: 25px;
         &-type {
             margin-bottom: 10px;
             &-flex {
                 display: flex;
                 flex-direction: column;
-                gap: 15px;
+                gap: 10px;
             }
             &-title {
                 font-weight: bold;
@@ -156,17 +158,29 @@
                 color:#373737;
             }
             &-box {
+                color:#707173;
                 &-number {
                     display: flex;
                     align-items: flex-start;
                     gap: 10px;
                     &-type {
+                        display: flex;
+                        align-items:center;
                         width:100px;
                         white-space: nowrap;
                         flex-shrink: 0;
+                        gap: 3px;
+                        &-text {
+                            padding-bottom: 4px;
+                        }
                     }
-                    &-bus {
-
+                }
+                &-text {
+                    display: flex;
+                    align-items: center;
+                    gap: 3px;
+                    &-dot {
+                        padding-bottom:4px;
                     }
                 }
             }
@@ -203,10 +217,11 @@
             font-size: 18px;
             text-align: center;
             line-height: 40px;
-            background: #c8c6c4;
+            background: rgb(206, 212, 218, 0.8);
             width: 50%;
             color: #565656;
             font-weight: bold;
+            border-radius: 8px;
         }
     }
 }
