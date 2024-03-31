@@ -16,6 +16,7 @@ import img10 from "./img/img10.jpg";
 import img11 from "./img/img11.jpg";
 import img12 from "./img/img12.jpg";
 import map from "./img/map.jpg";
+import flower from "./img/flower.png"
 
 function App() {
   const [visible, setVisible] = useState(false);
@@ -30,20 +31,21 @@ function App() {
   const data = [
     img1,
     img2,
-    img3,
     img4,
+    img3,
     img5,
     img6,
     img7,
-    img8,
-    img9,
-    img10,
     img11,
     img12,
+    img10,
+    img8,
+    img9,
   ];
   const photoClick = (index) => {
     setIndex(index);
   };
+
   return (
     <div className="App">
       <div className="inner">
@@ -53,7 +55,6 @@ function App() {
             <div className="main-page-invite-text">
               효철&아름의 결혼식에 초대합니다
             </div>
-            <div>&hearts;</div>
           </div>
           <div className="main-page-divider"></div>
           <div className="main-page-names">
@@ -68,8 +69,9 @@ function App() {
               </div>
               <div className="main-page-information-date-item">오후 3:30</div>
             </div>
-            <div className="main-page-information-lavidol">라비돌웨딩</div>
+            <div className="main-page-information-lavidol">라비돌웨딩 강남 2층 오뗄홀</div>
           </div>
+          <div className="main-page-flower"><img src={flower}/></div>
         </div>
         <div className="text-page">
           같은 생각, 같은 마음으로 지혜롭게 살겠습니다.<br/> 저희 두 사람이 소중한
@@ -87,6 +89,7 @@ function App() {
               <div className="parents-page-box-names-name">어머니 문순남</div>
             </div>
           </div>
+          <div className="parents-page-box-divider"></div>
           <div className="parents-page-box">
             <div className="parents-page-box-side">
               신부측 혼주
@@ -118,44 +121,50 @@ function App() {
             <div className="location-page-main-bold">라비돌웨딩강남</div>
             <div className="location-page-main-bold">서울시 강남구 논현로79길 72 (서울 강남구 역삼동 828-10)</div>
           </div>
+          <div className="location-page-divider"></div>
+          <div className="location-page-way">
+            <div className="location-page-way-type-title">셔틀버스 운행</div>
+            <div className="location-page-way-type-explain">
+              2호선 강남역 1번출구 &#8594; 라비돌웨딩강남
+            </div>
+          </div>
+          <div className="location-page-divider"></div>
           <div className="location-page-way">
             <div className="location-page-way-type">
               <div className="location-page-way-type-title">버스 이용시</div>
-              <div className="location-page-way-type-box">
-                <div className="location-page-way-type-box-number">
-                  <div className="location-page-way-type-box-number-type">&#8226;간선(파랑)</div>
-                  <div className="location-page-way-type-box-number-bus">140, 146, 341, 360, 400, 402, 420, 440, 441, 452, 470, 541, 542, 740, 741</div>
+              <div className="location-page-way-type-flex">
+                <div className="location-page-way-type-box">
+                  <div className="location-page-way-type-box-number">
+                    <div className="location-page-way-type-box-number-type">&#9724; 간선(파랑)</div>
+                    <div className="location-page-way-type-box-number-bus">140, 146, 341, 360, 400, 402, 420, 440, 441, 452, 470, 541, 542, 740, 741</div>
+                  </div>
                 </div>
-              </div>
-              <div className="location-page-way-type-box">
-                <div className="location-page-way-type-box-number">
-                  <div className="location-page-way-type-box-number-type">&#8226;광역(빨강)</div>
-                  <div className="location-page-way-type-box-number-bus">140, 9404, 9408, M4403, M4434, M5438, M6427, M6439, M7412</div>
+                <div className="location-page-way-type-box">
+                  <div className="location-page-way-type-box-number">
+                    <div className="location-page-way-type-box-number-type">&#9724; 광역(빨강)</div>
+                    <div className="location-page-way-type-box-number-bus">9404, 9408, M4403, M4434, M5438, M6427, M6439, M7412</div>
+                  </div>
                 </div>
               </div>
             </div>
+            <div className="location-page-divider"></div>
             <div className="location-page-way-type">
               <div className="location-page-way-type-title">지하철 이용시</div>
-              <div className="location-page-way-title-type-explain">2호선 강남역 하차 1번출구 역삼역방면으로 오다가 우리은행에서 우회전 200M 정도 가면 도착</div>
+              <div className="location-page-way-title-type-explain">2호선 강남역 하차 &#8594; 1번출구 역삼역방면으로 오다가 우리은행에서 우회전 200M 정도 가면 도착</div>
             </div>
           </div>
-          <div className="location-page-way-type">
+          <div className="location-page-divider"></div>
+          <div className="location-page-way">
             <div className="location-page-way-type-title">
               자가용 이용시
             </div>
             <div className="location-page-way-type">
               <div className="location-page-way-type">
-                <span className="location-page-way-type-bold">&#8226;한남대교 방면에서 올경우: </span><span className="location-page-way-type-light">강남역사거리에서 좌회전 - 우리은행에서 우회전 200M</span>
+                <span className="location-page-way-type-bold">&#9724; 한남대교 방면에서 오실경우: </span><span className="location-page-way-type-light">강남역사거리에서 좌회전 &#8594; 우리은행에서 우회전 200M</span>
               </div>
               <div className="location-page-way-type">
-                <span className="location-page-way-type-bold">&#8226;코엑스 방면에서 올경우: </span><span className="location-page-way-type-light">강남역사거리에서 U턴 &#8594;	 우리은행에서 우회전 200M</span>
+                <span className="location-page-way-type-bold">&#9724; 코엑스 방면에서 오실경우: </span><span className="location-page-way-type-light">강남역사거리에서 U턴 &#8594;	 우리은행에서 우회전 200M</span>
               </div>
-            </div>
-          </div>
-          <div className="location-page-way">
-            <div className="location-page-way-type-title">셔틀버스 운행</div>
-            <div className="location-page-way-type-explain">
-              2호선 강남역 1번출구 &#8594; 라비돌웨딩강남
             </div>
           </div>
         </div>

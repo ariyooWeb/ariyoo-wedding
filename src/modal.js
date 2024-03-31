@@ -28,6 +28,7 @@ const Modal = (props) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: props.initialSlide,
+    arrows: true
   };
   return (
     props.visible && (

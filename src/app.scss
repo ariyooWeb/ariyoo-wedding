@@ -2,36 +2,40 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: 'NanumSquare', sans-serif;
 }
 .inner {
     width: 100%;
     max-width: 720px;
-    background: #f3d6d7;
 }
 .main-page {
     padding: 80px 0;
-    background: #b9dce3;
+    background: rgb(223,204,223,0.5);
     text-align: center;
+    color: rgb(109, 67, 129);;
 
     &-invite {
+        letter-spacing: +1.5px;
         &-weddingDay {
             font-size: 32px;
             padding-bottom: 10px;
+            font-weight: bold;
         }
         &-text {
-            font-size: 20px;
+            font-size: 16px;
         }
         
     }
     &-divider {
         width: 80%;
         height:1px;
-        background: rgb(176, 16, 42);
+        background: #a9a8a3;
         margin: 0 auto;
-        margin-top: 30px;
+        margin-top: 50px;
+        opacity:0.7;
     }
     &-names {
-        padding: 30px 0 0 0;
+        padding: 50px 0 0 0;
         font-size: 24px;
         display: flex;
         flex-direction: column;
@@ -40,6 +44,8 @@
     &-information {
         padding: 30px 0;
         font-size: 18px;
+        font-weight: bold;
+        color: #565656;
         &-date {
             margin-bottom: 20px;
             &-item {
@@ -47,25 +53,37 @@
             }
         }
     }
+    &-flower {
+        margin-top:30px;
+        width: 150px;
+        width: 100%;
+        display:flex;
+        justify-content: center;
+        img {width: 140px;object-fit:contain}
+    }
 }
 .text-page {
     padding: 150px 16px;
     text-align: center;
-    background: beige;
+    background: #fff;
     word-break: keep-all;
     line-height: 1.5;
     font-size: 14px;
+    color: #828385;
 }
 .parents-page {
     display: flex;
+    align-items: center;
     padding: 30px 16px;
+    background: rgb(223,204,223,0.5);
+    color: rgba(185,123,188);
     &-box {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
         &-side {
-            font-size: 14px;
+            font-size: 18px;
             font-weight: bold;
             margin-bottom: 15px;
         }
@@ -74,18 +92,23 @@
             flex-direction: column;
             align-items: center;
             &-name {
-                font-size: 13px;
+                font-size: 16px;
                 line-height: 1.4;
             }
+        }
+        &-divider {
+            width: 1px;
+            height: 60px;
+            background: #a9a8a3;
         }
     }
 }
 .photo-page {
-    padding: 30px 16px;
-    background: skyblue;
+    padding: 10px;
+    background: #fff;
     &-grid {
         display: grid;
-        gap: 10px 10px;
+        gap: 8px 8px;
         grid-template-columns: 1fr 1fr 1fr;
     }
     &-img {
@@ -97,12 +120,20 @@
 .location-page {
     line-height: 1.25;
     padding: 30px 16px;
-    background: rgb(220, 217, 217);
+    background: rgb(223,204,223,0.5);
+    &-divider {
+        width: 100%;
+        height: 1px;
+        background: #373737;
+        margin-bottom: 25px;
+        opacity: 0.3;
+    }
     &-main {
         display: flex;
         flex-direction: column;
         gap: 5px;
         margin-bottom: 15px;
+        color: #373737;
         &-bold {
             font-weight: bold;
             font-size: 18px;
@@ -110,21 +141,29 @@
     }
     &-way {
         word-break: keep-all;
-        font-size: 14px;
+        font-size: 18px;
+        margin-bottom: 25px;
         &-type {
             margin-bottom: 10px;
+            &-flex {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
             &-title {
-                font-size: 16px;
                 font-weight: bold;
                 margin-bottom: 3px;
+                color:#373737;
             }
             &-box {
                 &-number {
                     display: flex;
                     align-items: flex-start;
+                    gap: 10px;
                     &-type {
-                        width:120px;
+                        width:100px;
                         white-space: nowrap;
+                        flex-shrink: 0;
                     }
                     &-bus {
 
@@ -137,11 +176,47 @@
     
 }
 .map-page {
-    border-bottom: 1px solid #000;
-    border-top: 1px solid #000;
     width: 100%;
-    padding: 30px 0;
+    padding: 0;
     img{width: 100%;}
+}
+.account-page {
+    background: rgb(223,204,223,0.5);
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(185, 123, 188);
+    &-title {
+        font-size: 18px;
+        margin-bottom: 30px;
+        font-weight: bold;
+    }
+
+    &-box {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        width: 100%;
+        &-one {
+            font-size: 18px;
+            text-align: center;
+            line-height: 40px;
+            background: #c8c6c4;
+            width: 50%;
+            color: #565656;
+            font-weight: bold;
+        }
+    }
+}
+.footer {
+    text-align: center;
+    font-size: 16px;
+    color: grey;
+    line-height: 1.6;
+    background: #fff;
+    padding: 30px 20px;
 }
 
 
