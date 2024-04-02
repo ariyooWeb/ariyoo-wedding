@@ -1,33 +1,35 @@
 {
   "files": {
-    "main.css": "/ariyoo-wedding/static/css/main.50d02253.css",
-    "main.js": "/ariyoo-wedding/static/js/main.4364c861.js",
+    "main.css": "/ariyoo-wedding/static/css/main.a358584b.css",
+    "main.js": "/ariyoo-wedding/static/js/main.fc64a3f8.js",
     "static/js/453.b5874e6c.chunk.js": "/ariyoo-wedding/static/js/453.b5874e6c.chunk.js",
     "static/media/img2.jpg": "/ariyoo-wedding/static/media/img2.a84d2226d07f84599151.jpg",
-    "static/media/img3.jpg": "/ariyoo-wedding/static/media/img3.245eb163a29a3e67bd94.jpg",
+    "static/media/img4.jpg": "/ariyoo-wedding/static/media/img4.245eb163a29a3e67bd94.jpg",
     "static/media/img8.jpg": "/ariyoo-wedding/static/media/img8.64f8051c1c840e775bca.jpg",
-    "static/media/img7.jpg": "/ariyoo-wedding/static/media/img7.7a7091006866f79d868e.jpg",
+    "static/media/img11.jpg": "/ariyoo-wedding/static/media/img11.7a7091006866f79d868e.jpg",
     "static/media/img6.jpg": "/ariyoo-wedding/static/media/img6.f9253f44fdcfed7b45e4.jpg",
     "static/media/img12.jpg": "/ariyoo-wedding/static/media/img12.be211f18e32f80fbb1a7.jpg",
-    "static/media/img10.jpg": "/ariyoo-wedding/static/media/img10.d5760ae4c7139e45d958.jpg",
-    "static/media/img11.jpg": "/ariyoo-wedding/static/media/img11.fdabb9629b9609f6009f.jpg",
-    "static/media/img9.jpg": "/ariyoo-wedding/static/media/img9.8b9c5378dda3613af1fb.jpg",
+    "static/media/img9.jpg": "/ariyoo-wedding/static/media/img9.d5760ae4c7139e45d958.jpg",
+    "static/media/img10.jpg": "/ariyoo-wedding/static/media/img10.fdabb9629b9609f6009f.jpg",
+    "static/media/img7.jpg": "/ariyoo-wedding/static/media/img7.8b9c5378dda3613af1fb.jpg",
     "static/media/img5.jpg": "/ariyoo-wedding/static/media/img5.00be2910eb4f81b8598d.jpg",
     "static/media/img1.jpg": "/ariyoo-wedding/static/media/img1.a7779e0f51632f7d3b1e.jpg",
-    "static/media/img4.jpg": "/ariyoo-wedding/static/media/img4.6b4ef402a796040f9c0c.jpg",
+    "static/media/img3.jpg": "/ariyoo-wedding/static/media/img3.6b4ef402a796040f9c0c.jpg",
+    "static/media/flower3.png": "/ariyoo-wedding/static/media/flower3.766f3e4616b95cdc0376.png",
     "static/media/map.jpg": "/ariyoo-wedding/static/media/map.79e0808f41069c022d77.jpg",
     "static/media/flower.png": "/ariyoo-wedding/static/media/flower.fbf4d67e5a53710280c8.png",
+    "static/media/flower2.png": "/ariyoo-wedding/static/media/flower2.8f9cd83002b27c361f20.png",
     "static/media/slick.svg": "/ariyoo-wedding/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/ariyoo-wedding/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/ariyoo-wedding/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/ariyoo-wedding/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/ariyoo-wedding/index.html",
-    "main.50d02253.css.map": "/ariyoo-wedding/static/css/main.50d02253.css.map",
-    "main.4364c861.js.map": "/ariyoo-wedding/static/js/main.4364c861.js.map",
+    "main.a358584b.css.map": "/ariyoo-wedding/static/css/main.a358584b.css.map",
+    "main.fc64a3f8.js.map": "/ariyoo-wedding/static/js/main.fc64a3f8.js.map",
     "453.b5874e6c.chunk.js.map": "/ariyoo-wedding/static/js/453.b5874e6c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.50d02253.css",
-    "static/js/main.4364c861.js"
+    "static/css/main.a358584b.css",
+    "static/js/main.fc64a3f8.js"
   ]
 }
