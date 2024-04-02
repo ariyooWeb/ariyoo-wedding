@@ -39,7 +39,8 @@
                 color: #565656;
                 &-copy {
                     padding: 5px 10px;
-                    background: rgba(94,99,117,0.7);
+                    // background: rgba(94,99,117,0.7);
+                    background: rgb(185, 123, 188, 0.8);
                     color: #fff;
                     border-radius: 40px;
                 }
@@ -53,11 +54,12 @@
         }
 
         &-button {
-            background:rgba(94,99,117,0.7);
+            background: rgb(185, 123, 188, 0.8);
             color: #fff;
             line-height: 40px;
             text-align: center;
             width: 100%;
+            border-radius: 5px;
         }
     }
 }

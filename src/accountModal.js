@@ -16,7 +16,7 @@ const AccountModal = (props) => {
               <div>
                 <div className="accountModal-inner-box-header">
                   <div>신랑 계좌</div>
-                  <CopyToClipboard className="accountModal-inner-box-header-copy" text="44310101092727">
+                  <CopyToClipboard className="accountModal-inner-box-header-copy" text="44310101092727" onCopy={()=>alert("복사 완료")}>
                 <text>복사</text></CopyToClipboard>
                 </div>
                 <div className="accountModal-inner-box-body">
@@ -26,8 +26,8 @@ const AccountModal = (props) => {
               </div>
               <div>
                 <div className="accountModal-inner-box-header">
-                  <div>신랑혼주</div>
-                  <CopyToClipboard className="accountModal-inner-box-header-copy" text="671210298540">
+                  <div>신랑 혼주</div>
+                  <CopyToClipboard className="accountModal-inner-box-header-copy" text="671210298540" onCopy={()=>alert("복사 완료")}>
                 <text>복사</text></CopyToClipboard>
                 </div>
                 <div className="accountModal-inner-box-body">
@@ -37,8 +37,8 @@ const AccountModal = (props) => {
               </div>
               <div>
                 <div className="accountModal-inner-box-header">
-                  <div>신랑혼주</div>
-                  <CopyToClipboard className="accountModal-inner-box-header-copy" text="40712348308">
+                  <div>신랑 혼주</div>
+                  <CopyToClipboard className="accountModal-inner-box-header-copy" text="40712348308" onCopy={()=>alert("복사 완료")}>
                 <text>복사</text></CopyToClipboard>
                 </div>
                 <div className="accountModal-inner-box-body">
@@ -51,7 +51,7 @@ const AccountModal = (props) => {
               <div>
                 <div className="accountModal-inner-box-header">
                   <div>신부 계좌</div>
-                  <CopyToClipboard className="accountModal-inner-box-header-copy" text="01057617473207">
+                  <CopyToClipboard className="accountModal-inner-box-header-copy" text="01057617473207" onCopy={()=>alert("복사 완료")}>
                 <text>복사</text></CopyToClipboard>
                 </div>
                 <div className="accountModal-inner-box-body">
@@ -61,8 +61,8 @@ const AccountModal = (props) => {
               </div>
               <div>
                 <div className="accountModal-inner-box-header">
-                  <div>신부 계좌</div>
-                  <CopyToClipboard className="accountModal-inner-box-header-copy" text="110008487309">
+                  <div>신부 혼주</div>
+                  <CopyToClipboard className="accountModal-inner-box-header-copy" text="110008487309" onCopy={()=>alert("복사 완료")}>
                 <text>복사</text></CopyToClipboard>
                 </div>
                 <div className="accountModal-inner-box-body">
@@ -72,8 +72,8 @@ const AccountModal = (props) => {
               </div>
               <div>
                 <div className="accountModal-inner-box-header">
-                  <div>신부 계좌</div>
-                  <CopyToClipboard className="accountModal-inner-box-header-copy" text="11002173002011">
+                  <div>신부 혼주</div>
+                  <CopyToClipboard className="accountModal-inner-box-header-copy" text="11002173002011" onCopy={()=>alert("복사 완료")}>
                 <text>복사</text></CopyToClipboard>
                 </div>
                 <div className="accountModal-inner-box-body">

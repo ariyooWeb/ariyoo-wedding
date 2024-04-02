@@ -16,7 +16,9 @@ import img10 from "./img/img10.jpg";
 import img11 from "./img/img11.jpg";
 import img12 from "./img/img12.jpg";
 import map from "./img/map.jpg";
-import flower from "./img/flower.png"
+import flower from "./img/flower.png";
+import flower2 from "./img/flower2.png";
+import flower3 from "./img/flower3.png";
 
 function App() {
   const [visible, setVisible] = useState(false);
@@ -31,16 +33,16 @@ function App() {
   const data = [
     img1,
     img2,
-    img4,
     img3,
+    img4,
     img5,
     img6,
     img7,
-    img11,
-    img12,
-    img10,
     img8,
     img9,
+    img10,
+    img11,
+    img12,
   ];
   const photoClick = (index) => {
     setIndex(index);
@@ -74,10 +76,14 @@ function App() {
           <div className="main-page-flower"><img src={flower}/></div>
         </div>
         <div className="text-page">
-          같은 생각, 같은 마음으로 지혜롭게 살겠습니다.<br/> 저희 두 사람이 소중한
-          분들을 모시고 사랑의 결실을 이루려 합니다. 오로지 믿음과 사랑만을
-          약속하는 귀한 날에 축복의 걸음을 하시어 저희의 하나됨을 지켜보아
-          주시고 격려해 주시면 더없는 기쁨으로 간직하겠습니다.
+          <div className="text-page-divider"></div>
+          <div className="text-page-content">
+            같은 생각, 같은 마음으로 지혜롭게 살겠습니다.<br/> 저희 두 사람이 소중한
+            분들을 모시고 사랑의 결실을 이루려 합니다. 오로지 믿음과 사랑만을
+            약속하는 귀한 날에 축복의 걸음을 하시어 저희의 하나됨을 지켜보아
+            주시고 격려해 주시면 더없는 기쁨으로 간직하겠습니다.
+          </div>
+          <div className="text-page-divider"></div>
         </div>
         <div className="parents-page">
           <div className="parents-page-box">
@@ -89,7 +95,8 @@ function App() {
               <div className="parents-page-box-names-name">어머니 문순남</div>
             </div>
           </div>
-          <div className="parents-page-box-divider"></div>
+          {/* <div className="parents-page-box-divider"></div> */}
+          <img src={flower2} className="parents-page-box-flower"/>
           <div className="parents-page-box">
             <div className="parents-page-box-side">
               신부측 혼주
@@ -125,7 +132,7 @@ function App() {
           <div className="location-page-way">
             <div className="location-page-way-type-title">셔틀버스 운행</div>
             <div className="location-page-way-type-box">
-              2호선 강남역 1번출구 &#8594; 라비돌웨딩강남
+              2호선 강남역 1번출구 &harr; 라비돌웨딩강남
             </div>
           </div>
           <div className="location-page-divider"></div>
@@ -173,6 +180,7 @@ function App() {
           </div>
         <div className="account-page">
           <div className="account-page-title">신랑 & 신부에게 마음 전하실 곳</div>
+          <img src={flower3} className="account-page-flower" />
           <div className="account-page-box">
             <div
               className="account-page-box-one"
@@ -195,7 +203,7 @@ function App() {
         </div>
         <div className="footer">
           made by ahreum<br/>
-          저희의 결혼을 축복해주세요.<br/>감사합니다
+          저희의 결혼을 축복해주세요.<br/>감사합니다.
         </div>
       </div>
     </div>

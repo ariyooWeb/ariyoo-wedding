@@ -12,7 +12,8 @@
     padding: 60px 0;
     background: rgb(223,204,223,0.5);
     text-align: center;
-    color: rgb(142, 115, 185);
+    // color: rgb(142, 115, 185);
+    color: rgba(185,123,188);
 
     &-invite {
         letter-spacing: +1.5px;
@@ -29,8 +30,8 @@
     }
     &-divider {
         width: 80%;
-        height:2px;
-        background: rgb(142, 115, 185,0.3);
+        height:1px;
+        background: rgba(185,123,188, 0.3);
         margin: 0 auto;
         margin-top: 50px;
         border-radius: 10px;
@@ -62,17 +63,24 @@
         width: 100%;
         display:flex;
         justify-content: center;
-        img {width: 140px;object-fit:contain}
+        img {width: 140px;object-fit:contain;opacity:0.8}
     }
 }
 .text-page {
-    padding: 150px 16px;
+    padding: 50px 16px;
     text-align: center;
     background: #fff;
     word-break: keep-all;
     line-height: 1.5;
     font-size: 14px;
     color: #828385;
+
+    &-divider {
+        height: 1px;
+        width: 30%;
+        margin: 20px auto;
+        background:rgb(185, 123, 188, 0.5);
+    }
 }
 .parents-page {
     display: flex;
@@ -100,9 +108,14 @@
             }
         }
         &-divider {
-            width: 0.5px;
+            width: 1px;
             height: 60px;
-            background: rgb(109, 67, 129);
+            background: rgba(185,123,188,0.5);
+        }
+        &-flower {
+            width: 70px;
+            object-fit: contain;
+            opacity: 0.7;
         }
     }
 }
@@ -203,8 +216,13 @@
     color: rgb(185, 123, 188);
     &-title {
         font-size: 18px;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
         font-weight: bold;
+    }
+
+    &-flower {
+        width: 50px;
+        margin-bottom: 10px;
     }
 
     &-box {
@@ -217,7 +235,7 @@
             font-size: 18px;
             text-align: center;
             line-height: 40px;
-            background: rgb(206, 212, 218, 0.8);
+            background: rgb(185, 123, 188,0.3);
             width: 50%;
             color: #565656;
             font-weight: bold;
