@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ariyoo-wedding/static/css/main.a358584b.css",
+    "main.css": "/ariyoo-wedding/static/css/main.213b2468.css",
     "main.js": "/ariyoo-wedding/static/js/main.fc64a3f8.js",
     "static/js/453.b5874e6c.chunk.js": "/ariyoo-wedding/static/js/453.b5874e6c.chunk.js",
     "static/media/img2.jpg": "/ariyoo-wedding/static/media/img2.a84d2226d07f84599151.jpg",
@@ -24,12 +24,12 @@
     "static/media/slick.ttf": "/ariyoo-wedding/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "index.html": "/ariyoo-wedding/index.html",
     "static/media/slick.woff": "/ariyoo-wedding/static/media/slick.295183786cd8a1389865.woff",
-    "main.a358584b.css.map": "/ariyoo-wedding/static/css/main.a358584b.css.map",
+    "main.213b2468.css.map": "/ariyoo-wedding/static/css/main.213b2468.css.map",
     "main.fc64a3f8.js.map": "/ariyoo-wedding/static/js/main.fc64a3f8.js.map",
     "453.b5874e6c.chunk.js.map": "/ariyoo-wedding/static/js/453.b5874e6c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a358584b.css",
+    "static/css/main.213b2468.css",
     "static/js/main.fc64a3f8.js"
   ]
 }
