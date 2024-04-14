@@ -25,6 +25,7 @@ function App() {
   const [accountIndex, setAccountIndex] = useState(undefined);
   const closeModal = () => {
     setVisible(false);
+    document.body.style.overflow = 'unset';
   };
   const closeAccountModal = () => {
     setAccountIndex(undefined);
@@ -47,6 +48,11 @@ function App() {
   const photoClick = (index) => {
     setIndex(index);
   };
+
+  const openModal = () => {
+    setVisible(true);
+    document.body.style.overflow = 'hidden';
+  }
 
   return (
     <div className="App">
@@ -108,7 +114,7 @@ function App() {
           </div>
         </div>
         <div className="photo-page">
-          <div className="photo-page-grid" onClick={() => setVisible(true)}>
+          <div className="photo-page-grid" onClick={openModal}>
             {data.map((item, index) => (
               <img
                 src={item}

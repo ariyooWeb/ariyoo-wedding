@@ -16,6 +16,7 @@ import img9 from "./img/img9.jpg";
 import img10 from "./img/img10.jpg";
 import img11 from "./img/img11.jpg";
 import img12 from "./img/img12.jpg";
+import CLOSE from "./img/close.png";
 
 const Modal = (props) => {
   const closeModal = () => {
@@ -35,7 +36,7 @@ const Modal = (props) => {
       <div className="modal">
         <div className="modal-inner">
           <div className="modal-inner-close" onClick={closeModal}>
-            &times;
+             <img src={CLOSE} className="modal-inner-close-icon"/>
           </div>
           <div className="modal-inner-slide">
             <Slider {...settings}>
